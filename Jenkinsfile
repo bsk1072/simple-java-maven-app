@@ -10,6 +10,11 @@ pipeline {
             git 'https://github.com/jenkins-docs/simple-java-maven-app.git'
          }
       }
+         stage ('Unit Test Stage') {
+             steps {
+           echo 'Unit test Staging'
+             }
+         }
          stage ('build stage') {
              steps {
             // Run Maven on a Unix agent.
